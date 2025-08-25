@@ -4,8 +4,6 @@
   const ok = document.getElementById("submitSuccessMessage");
   const err = document.getElementById("submitErrorMessage");
 
-  console.log(form);
-
   function encode(data) {
     return new URLSearchParams(data).toString();
   }
@@ -23,7 +21,6 @@
     btn.disabled = true;
 
     const data = new FormData(form);
-    // Netlify expects this field
     data.set("form-name", form.getAttribute("name"));
 
     try {
