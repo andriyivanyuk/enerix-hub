@@ -1,5 +1,55 @@
 .enerix-logo {
-    color: #ffc800;
-    font-size: 18px;
-    letter-spacing: 2px;
+  color: #ffc800;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+.product-slider {
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  min-height: 50vh;
+}
+.product-slider.slick-initialized {
+  opacity: 1;
+  min-height: 0;
+}
+
+.product-slider img,
+.product-slider video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.product-slider .slick-slide {
+  padding: 4px;
+}
+
+.slick-arrow.custom-prev,
+.slick-arrow.custom-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 25;
+  border: 0;
+  width: 44px;
+  height: 44px;
+  /* border-radius: 999px; */
+  display: grid;
+  place-items: center;
+  color: #fff;
+}
+.slick-arrow.custom-prev {
+  left: 8px;
+}
+.slick-arrow.custom-next {
+  right: 8px;
+}
+.slick-arrow:focus {
+  outline: none;
+}
+
+.product-slider .slick-dots {
+  bottom: -28px;
 }
