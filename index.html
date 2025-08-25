@@ -495,6 +495,7 @@
           name="contact"
           id="contactForm"
           method="POST"
+          action="/"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
         >
@@ -502,7 +503,7 @@
           <input type="hidden" name="form-name" value="contact" />
           <p class="visually-hidden">
             <label
-              >Don’t fill this out if you’re human: <input name="bot-field"
+              >Не заповнюйте це поле, якщо ви людина: <input name="bot-field"
             /></label>
           </p>
 
@@ -518,7 +519,7 @@
                   placeholder="Your Name *"
                   required
                 />
-                <div class="invalid-feedback">A name is required.</div>
+                <div class="invalid-feedback">Будь ласка введіть імя.</div>
               </div>
               <div class="form-group">
                 <!-- Email address input-->
@@ -530,7 +531,7 @@
                   placeholder="Your Email *"
                   required
                 />
-                <div class="invalid-feedback">Email is not valid.</div>
+                <div class="invalid-feedback">Email не валідний.</div>
               </div>
               <div class="form-group mb-md-0">
                 <!-- Phone number input-->
@@ -542,7 +543,7 @@
                   placeholder="Your Phone *"
                   required
                 />
-                <div class="invalid-feedback">A phone number is required.</div>
+                <div class="invalid-feedback">Будь ласка введіть телефон.</div>
               </div>
             </div>
             <div class="col-md-6">
@@ -555,7 +556,9 @@
                   placeholder="Your Message *"
                   required
                 ></textarea>
-                <div class="invalid-feedback">A message is required.</div>
+                <div class="invalid-feedback">
+                  Будь ласка введіть повідомлення.
+                </div>
               </div>
             </div>
           </div>
@@ -582,7 +585,7 @@
               id="submitButton"
               type="submit"
             >
-              Send Message
+              Надіслати
             </button>
           </div>
         </form>
@@ -1051,11 +1054,11 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script src="js/scripts.js"></script>
     <script src="js/initSlider.js"></script>
+    <script src="js/afterSubmit.js"></script>
   </body>
 </html>
